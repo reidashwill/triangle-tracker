@@ -4,7 +4,15 @@ $(document).ready(function() {
     var sideOne = $("input:radio[name=sideOne]:checked").val();
     var sideTwo = $("input:radio[name=sideTwo]:checked").val();
     var sideThree = $("input:radio[name=sideThree]:checked").val();
-    if(sideOne === sideTwo && sideOne === sideThree) {
+    if(sideOne === undefined || sideTwo === undefined || sideThree === undefined) {
+    alert('This is not a triangle!');
+    } else if(parseInt(sideOne) > parseInt(sideTwo) + parseInt(sideThree)) {
+      alert('This is not a triangle');
+    } else if(parseInt(sideTwo) > parseInt(sideOne) + parseInt(sideThree)) {
+      alert('This is not a triangle');
+    } else if(parseInt(sideThree) > parseInt(sideOne) + parseInt(sideTwo)) {
+      alert('This is not a triangle');
+    } else if(sideOne === sideTwo && sideOne === sideThree) {
       $('#isosolese').hide();
       $('#scalene').hide();
       $('#equilateral').show();
@@ -12,13 +20,12 @@ $(document).ready(function() {
       $('#isosolese').show();
       $('#scalene').hide();
       $('#equilateral').hide();
-    // } else if() {
-    //   $('#isosolese').hide();
-    //   $('#scalene').hide();
-    //   $('#equilateral').hide();
-    // } else {
-    //   alert('This is not a triangle!');
-    // }
-    debugger
+    } else if(sideOne != sideTwo && sideOne != sideThree) {
+      $('#isosolese').hide();
+      $('#scalene').show();
+      $('#equilateral').hide();
+    }
+    debugger;
+
   });
 })
