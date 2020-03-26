@@ -12,14 +12,20 @@
   <body>
     <div class="container">
      <h1>Let's create a triangle</h1>
-     <h2>Please select from the options below</h2>
+     <h4>Please select from the options below:</h4>
       <div>
-        <form id="forGroupOne">
+        <form id="formGroupOne">
           <h3>Side One</h3>
           <div class="radio">
             <label>
               <input type="radio" name="sideOne" value="1">
               One
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sideOne" value="4">
+              Four
             </label>
           </div>
           <div class="radio">
@@ -43,6 +49,12 @@
           </div>
           <div class="radio">
             <label>
+              <input type="radio" name="sideTwo" value="4">
+              Four
+            </label>
+          </div>
+          <div class="radio">
+            <label>
               <input type="radio" name="sideTwo" value="5">
               Five
             </label>
@@ -62,6 +74,12 @@
           </div>
           <div class="radio">
             <label>
+              <input type="radio" name="sideThree" value="4">
+              Four
+            </label>
+          </div>
+          <div class="radio">
+            <label>
               <input type="radio" name="sideThree" value="5">
               Five
             </label>
@@ -74,6 +92,25 @@
           </div>
           <button type="submit" class="btn btn-primary">Triangulate!</button>
         </form>
+     </div>
+     <div id="results">
+       <div id="isosolese">
+         <h2>It's an Isosolese!</h2>
+         <img src="https://i.pinimg.com/736x/0a/18/f7/0a18f78e89c1234c6f4bcb18b1720d0b.jpg">
+         <p>Two of the sides are equal in length!</p>
+       </div>
+       <div id="equilateral">
+        <h2>It's an Equalateral!</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Equilateral-triangle-heights.svg/900px-Equilateral-triangle-heights.svg.png">
+        <p>All of the sides have the same length!</p>
+      </div>
+      <div id="scalene">
+        <h2>It's a Scalene!</h2>
+        <img src="https://www.homeschoolmath.net/teaching/g/g-img/scalene-triangle.gif">
+        <p>No sides are equal!</p>
+      </div>
+     </div>
+       
      </div>
     
     
