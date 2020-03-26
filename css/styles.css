@@ -1,9 +1,12 @@
 img {
-  width: 35%
+  width: 35%;
+  height: 
+  
 }
 #scalene{
+  width: 100ß%;
   margin-top: 30vh;
-  margin-left: 30vh;
+  margin-left: 10px;
   text-align: center;
   display: none;
 }
